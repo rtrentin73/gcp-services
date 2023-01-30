@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/rtrentin-01/nginx
+  args: [ 'build', '-t', 'gcr.io/rtrentin-01/nginx:lastest', '.' ]
+images:
+- 'gcr.io/rtrentin-01/nginx:latest'
