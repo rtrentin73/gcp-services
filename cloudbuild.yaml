@@ -3,4 +3,7 @@ steps:
   entrypoint: 'curl'
   args: ['https://google.com/']
 logsBucket: 'gs://rtrentin-01_cloudbuild'
+options:
+  workerPool:
+    'projects/rtrentin01/locations/us-east1/workerPools/vpc001-private-pool'
 
