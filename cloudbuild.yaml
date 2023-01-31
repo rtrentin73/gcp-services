@@ -1,5 +1,5 @@
 steps:
-- name: 'gcr.io/gcp-runtimes/ubuntu_22_0_4'
+- name: 'gcr.io/gcp-runtimes/ubuntu_18_0_4'
   entrypoint: 'curl'
   args: ['http://google.com/']
 logsBucket: 'gs://rtrentin-01_cloudbuild'
