@@ -1,9 +1,9 @@
 steps:
-- name: 'gcr.io/gcp-runtimes/ubuntu_18_0_4'
-  entrypoint: 'curl'
-  args: ['https://google.com/']
+- name: "gcr.io/cloud-builders/kubectl"
+  args: ['get', 'nodes']
+  env:
+  - 'CLOUDSDK_COMPUTE_REGION=us-east1'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=gke-east-vpc001'
 options:
   workerPool:
     'projects/rtrentin01/locations/us-east1/workerPools/vpc001-private-pool'
-logsBucket: 'gs://rtrentin-01_cloudbuild'
-
